@@ -15,7 +15,7 @@ site_title: Accessibility checklist
   <body>
 
     <header class="nhsuk-header" role="banner">
-      <div class="nhsuk-width-container-fluid nhsuk-header__container">
+      <div class="nhsuk-width-container{% if fullwidth %}-fluid{% endif %} nhsuk-header__container">
         <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service" href="{{ '/' | url }}">
             <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
               <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
@@ -29,9 +29,23 @@ site_title: Accessibility checklist
       </div>
     </header>
 
-    <div class="nhsuk-width-container-fluid">
-      <main class="nhsuk-main-wrapper" id="maincontent">
-        {{ content | safe }}
+    <div class="nhsuk-width-container{% if fullwidth %}-fluid{% endif %} nhsuk-header__container nhsuk-phase-banner">
+      <p><span class="nhsuk-tag">NEW</span> - Your <a href="https://feedback.digital.nhs.uk/jfe/form/SV_9nQ3ky9izocq0zs">feedback</a> will help us to improve this</p>
+    </div>
+
+    <div class="nhsuk-width-container{% if fullwidth %}-fluid{% endif %}">
+      <main class="nhsuk-main-wrapper" id="maincontent" role="main">
+
+      {% if not fullwidth %}
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+      {% endif %}
+          {{ content | safe }}
+      {% if not fullwidth %}
+          </div>
+        </div>
+      {% endif %}
+
       </main>
     </div>
 

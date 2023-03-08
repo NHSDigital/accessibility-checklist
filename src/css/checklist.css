@@ -92,3 +92,13 @@ th button span::after {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* phase banner */
+.nhsuk-phase-banner {
+  border-bottom: 2px solid #d8dde0;
+}
+
+.nhsuk-phase-banner p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
