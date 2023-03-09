@@ -12,7 +12,7 @@
   <body>
 
     <header class="nhsuk-header" role="banner">
-      <div class="nhsuk-width-container-fluid nhsuk-header__container">
+      <div class="nhsuk-width-container nhsuk-header__container">
         <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service" href="/accessibility-checklist/">
             <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
               <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
@@ -26,10 +26,19 @@
       </div>
     </header>
 
-    <div class="nhsuk-width-container-fluid">
-      <main class="nhsuk-main-wrapper" id="maincontent">
-        <div class="nhsuk-back-link">
-  <a class="nhsuk-back-link__link" href="/accessibility-checklist/checklist">
+    <div class="nhsuk-width-container nhsuk-header__container nhsuk-phase-banner">
+      <p><span class="nhsuk-tag">NEW</span>&nbsp; Your <a href="https://feedback.digital.nhs.uk/jfe/form/SV_9nQ3ky9izocq0zs">feedback</a> will help us to improve this.</p>
+    </div>
+
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper" id="maincontent" role="main">
+
+      
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+      
+          <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/accessibility-checklist/checklist-full">
     <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
     </svg>
@@ -52,6 +61,16 @@
 <p>None</p>
 <p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">Understanding Success Criterion 3.3.2 Labels or Instructions</a></p>
 
+<script>
+  if (document.referrer) {
+    const backLink = document.getElementsByClassName("nhsuk-back-link__link")[0].setAttribute("href", document.referrer);
+  }
+</script>
+
+      
+          </div>
+        </div>
+      
 
       </main>
     </div>
