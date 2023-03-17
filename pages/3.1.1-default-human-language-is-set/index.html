@@ -49,10 +49,9 @@
 <p>None</p>
 <h2>Developer Notes</h2>
 <h3>Setting language codes</h3>
-<p>Identifying the human language of the page exposes the content of the page to user agents and assistive technology with more accuracy — including correct pronunciation of words and display of characters.</p>
+<p>Identifying the human language of the page exposes the content of the page to user agents and assistive technologies with more accuracy — including correct pronunciation of words and display of characters.</p>
 <p>For example <code>&lt;html lang=&quot;en&quot;&gt;</code></p>
-<p>It's also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
-<p>For example <code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
+<p>If a webpage has content in more than one language, set the page to the language that is used the most.</p>
 <h4>More information</h4>
 <ul>
 <li><a href="https://webaim.org/techniques/language/">WebAIM: Document and Content Language</a></li>
@@ -60,7 +59,7 @@
 <h2>Testing Notes</h2>
 <h3>The default human language of each web page as been set</h3>
 <ul>
-<li>The language of the page and changes of language are specified</li>
+<li>The language of the page is specified</li>
 </ul>
 <h4>Steps to check</h4>
 <ul>
@@ -68,7 +67,8 @@
 </ul>
 <p><strong>Impact range:</strong> Medium - Low</p>
 <p><strong>Test type:</strong> Automated</p>
-<p><strong>Tool:</strong> <a href="https://www.paciellogroup.com/toolkit/">ARC Toolkit</a> (check Page Info)</p>
+<p><strong>Tool:</strong> <a href="https://www.paciellogroup.com/toolkit/">ARC Toolkit</a> (check Page navigation &amp; language)</p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1 Language of Page</a></p>
 
 <script>
   if (document.referrer) {

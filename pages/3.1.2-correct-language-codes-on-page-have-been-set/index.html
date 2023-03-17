@@ -49,10 +49,9 @@
 <p>None</p>
 <h2>Developer Notes</h2>
 <h3>Setting language codes</h3>
-<p>Identifying the human language of the page exposes the content of the page to user agents and assistive technology with more accuracy — including correct pronunciation of words and display of characters.</p>
-<p>For example <code>&lt;html lang=&quot;en&quot;&gt;</code></p>
-<p>It's also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
+<p>As well as <a href="/pages/3.1.1-default-human-language-is-set">setting the language of the page</a> it is also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
 <p>For example <code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
+<p>This will help user agents and assistive technologies to present content according to the presentation and pronunciation rules of that language.</p>
 <h4>More information</h4>
 <ul>
 <li><a href="https://webaim.org/techniques/language/">WebAIM: Document and Content Language</a></li>
@@ -65,10 +64,11 @@
 <ul>
 <li>Identify any content written in a different language and use Developer Tools to inspect and confirm content has been marked up appropriately</li>
 </ul>
-<p>For example, where the main site language is English an a fragment is written in French the code should look something like this using a code inspector:</p>
+<p>For example, where the main site language is English and a fragment is written in French the code should look something like this using a code inspector:</p>
 <p><code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
 <p><strong>Impact range:</strong> Low</p>
 <p><strong>Test type:</strong> Manual</p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Understanding Success Criterion 3.1.2 Language of Parts</a></p>
 
 <script>
   if (document.referrer) {
