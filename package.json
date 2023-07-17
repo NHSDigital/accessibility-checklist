@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcheung-nhs/accessibility-checklist.git"
+    "url": "git+https://github.com/NHSDigital/accessibility-checklist.git"
   },
   "keywords": [],
   "author": "Michael Cheung",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mcheung-nhs/accessibility-checklist/issues"
+    "url": "https://github.com/NHSDigital/accessibility-checklist/issues"
   },
-  "homepage": "https://github.com/mcheung-nhs/accessibility-checklist#readme",
+  "homepage": "https://github.com/NHSDigital/accessibility-checklist#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "eslint": "^8.23.1",
