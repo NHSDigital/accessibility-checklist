@@ -18,6 +18,8 @@ priority:
 responsibility:
   - Designer
 severity:
+  - Minor
+  - Moderate
 successCriteria:
   - None
 testProcedure:

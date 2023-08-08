@@ -18,6 +18,7 @@ priority:
 responsibility:
   - Developer
 severity:
+  - Moderate
 successCriteria:
   - None
 testProcedure:
