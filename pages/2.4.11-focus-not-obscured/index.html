@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Correct language codes for different languages on the page has been set where applicable - NHS</title>
+    <title>Focus not obscured - A focus indicator is not restricted in any way - NHS</title>
     <link rel="stylesheet" href="/accessibility-checklist/css/nhsuk-frontend.css">
     <link rel="stylesheet" href="/accessibility-checklist/css/checklist.css">
     <script src="/accessibility-checklist/js/scripts.js" defer></script>
@@ -44,31 +44,19 @@
     </svg>
     Back to checklist</a>
 </div>
-<h1>Correct language codes for different languages on the page has been set where applicable</h1>
+<h1>Focus not obscured - A focus indicator is not restricted in any way</h1>
 <h2>Design Notes</h2>
-<p>Design decisions are not relevant.</p>
+<h3>When a user interface component receives keyboard focus, the component is not entirely hidden due to author-created content</h3>
+<p>A persistent header or footer can completely obscure focus, so if these elements are present they should be small enough to ensure they won't obscure page content in focus while a user is tabbing through the page.</p>
 <h2>Developer Notes</h2>
-<h3>Setting language codes</h3>
-<p>As well as <a href="/pages/3.1.1-default-human-language-is-set">setting the language of the page</a> it is also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
-<p>For example <code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p>This will help user agents and assistive technologies to present content according to the presentation and pronunciation rules of that language.</p>
-<h4>More information</h4>
-<ul>
-<li><a href="https://webaim.org/techniques/language/">WebAIM: Document and Content Language</a></li>
-</ul>
+<p>Ensure that focus is unobscured by other content at all times.</p>
 <h2>Testing Notes</h2>
-<h3>Correct language codes for different languages on the page has been set where applicable</h3>
-<p>The human language of each passage or phrase in the content can be programmatically determined.</p>
-<p>Exceptions include: proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</p>
-<h4>Steps to check</h4>
-<ul>
-<li>Identify any content written in a different language and use Developer Tools to inspect and confirm content has been marked up appropriately</li>
-</ul>
-<p>For example, where the main site language is English and a fragment is written in French the code should look something like this using a code inspector:</p>
-<p><code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p><strong>Impact range:</strong> Low</p>
+<h3>Steps to check</h3>
+<p>Tab through the page to see if the focus is completely visible for all content. Look for content which might obscure the focus indicator.</p>
+<p><strong>Impact range:</strong> Low-Medium</p>
 <p><strong>Test type:</strong> Manual</p>
-<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Understanding Success Criterion 3.1.2 Language of Parts</a></p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html">Understanding Success Criterion 2.4.11 Focus Not Obscured (Minimum) (WCAG 2.2)</a></p>
+<p><strong>See also:</strong> <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html">Understanding SC 2.4.12: Focus Not Obscured (Enhanced)</a></p>
 
 <script>
   if (document.referrer) {

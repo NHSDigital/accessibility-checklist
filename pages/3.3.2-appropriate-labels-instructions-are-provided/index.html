@@ -56,9 +56,16 @@
 <li><a href="https://adamsilver.io/articles/placeholders-are-problematic/">https://adamsilver.io/articles/placeholders-are-problematic/</a></li>
 </ul>
 <h2>Developer Notes</h2>
-<p>None</p>
+<p>Reliant on design influence.</p>
 <h2>Testing Notes</h2>
-<p>None</p>
+<p>To check, either:</p>
+<ol>
+<li>Use the code to ensure that both the field and the label have matching <code>for</code> and <code>ID</code> attribute values, or that a form field contains a programmatic label, such as <code>aria-label</code>, that explains the purpose of the field.</li>
+</ol>
+<p>OR</p>
+<ol start="2">
+<li>Ensure that the relevant label is read by a screen reader, and the purpose of the form field is conveyed</li>
+</ol>
 <p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">Understanding Success Criterion 3.3.2 Labels or Instructions</a></p>
 
 <script>

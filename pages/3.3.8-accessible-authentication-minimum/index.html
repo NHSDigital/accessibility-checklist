@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Correct language codes for different languages on the page has been set where applicable - NHS</title>
+    <title>Accessible Authentication (Minimum) - users are not required to complete a function test, except under certain conditions - NHS</title>
     <link rel="stylesheet" href="/accessibility-checklist/css/nhsuk-frontend.css">
     <link rel="stylesheet" href="/accessibility-checklist/css/checklist.css">
     <script src="/accessibility-checklist/js/scripts.js" defer></script>
@@ -44,31 +44,31 @@
     </svg>
     Back to checklist</a>
 </div>
-<h1>Correct language codes for different languages on the page has been set where applicable</h1>
-<h2>Design Notes</h2>
-<p>Design decisions are not relevant.</p>
-<h2>Developer Notes</h2>
-<h3>Setting language codes</h3>
-<p>As well as <a href="/pages/3.1.1-default-human-language-is-set">setting the language of the page</a> it is also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
-<p>For example <code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p>This will help user agents and assistive technologies to present content according to the presentation and pronunciation rules of that language.</p>
-<h4>More information</h4>
+<h1>Accessible Authentication (Minimum) - users are not required to complete a function test, except under certain conditions</h1>
+<h2>Design / Developer Notes</h2>
+<h3>A cognitive function test MUST NOT be required for any step in an authentication process, unless specified criteria are met</h3>
+<p>An example of a cognitive function test of authentication process could be:</p>
 <ul>
-<li><a href="https://webaim.org/techniques/language/">WebAIM: Document and Content Language</a></li>
+<li>Remembering a password</li>
+<li>Helpful hints or questions</li>
+<li>Solving a puzzle or a capture to be able to log in</li>
 </ul>
+<p>Note: It is allowed to have such a test if one of following is true:</p>
+<ol>
+<li>An alternative method exists which does not require any of these details, such as allowing the paste function or offering the ability to log in through a third-party provider using the OAuth method</li>
+<li>A mechanism is available to assist the user in completing the cognitive function test</li>
+</ol>
 <h2>Testing Notes</h2>
-<h3>Correct language codes for different languages on the page has been set where applicable</h3>
-<p>The human language of each passage or phrase in the content can be programmatically determined.</p>
-<p>Exceptions include: proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</p>
-<h4>Steps to check</h4>
-<ul>
-<li>Identify any content written in a different language and use Developer Tools to inspect and confirm content has been marked up appropriately</li>
-</ul>
-<p>For example, where the main site language is English and a fragment is written in French the code should look something like this using a code inspector:</p>
-<p><code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p><strong>Impact range:</strong> Low</p>
+<h3>Steps to check</h3>
+<p>Check that:</p>
+<ol>
+<li>There are no cognitive function tests required to log in</li>
+<li>If such a test is present, a user has an alternate method of bypassing such tests, such as pasting a password or logging in through an alternate method</li>
+<li>Make sure that JavaScript is not blocking the functionality of a browser agent that would allow a user to save their data, such as username and password, so they do not have to remember them all the time when entering the website.</li>
+</ol>
+<p><strong>Impact range:</strong> Medium</p>
 <p><strong>Test type:</strong> Manual</p>
-<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Understanding Success Criterion 3.1.2 Language of Parts</a></p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">Understanding Success Criterion 3.3.8 Accessible Authentication (Minimum) (WCAG 2.2)</a></p>
 
 <script>
   if (document.referrer) {

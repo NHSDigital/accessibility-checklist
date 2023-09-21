@@ -56,9 +56,14 @@
 <li>See live <a href="https://design-system.service.gov.uk/components/error-message/">GOV.UK error message</a> and <a href="https://design-system.service.gov.uk/components/error-summary/">error summary</a> component examples.</li>
 </ul>
 <h2>Developer Notes</h2>
-<p>None</p>
+<p>Following design instructions, ensure an error message is displayed in text and preferably linked programmatically to the relevant form field/issue.</p>
 <h2>Testing Notes</h2>
-<p>None</p>
+<p>To check, generate an error.</p>
+<ol>
+<li>Navigate the page with a tab key or shift+tab in reverse order.</li>
+<li>Check a descriptive error message is displayed for each item in error, which is read by a screen reader when the error has focus</li>
+<li>Make sure that the link for each error message is reachable with a keyboard.</li>
+</ol>
 <p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">Understanding Success Criterion 3.3.1 Error Identification</a></p>
 
 <script>

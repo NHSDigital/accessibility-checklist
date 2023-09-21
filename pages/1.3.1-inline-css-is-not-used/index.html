@@ -46,11 +46,15 @@
 </div>
 <h1>Inline CSS is not used</h1>
 <h2>Design Notes</h2>
-<p>None</p>
+<p>Design decisions are not relevant.</p>
 <h2>Developer Notes</h2>
-<p>Avoid using inline CSS.</p>
+<p>Inline CSS is where CSS code has been added into HTML elements. This must be avoided and CSS code should be placed in the style sheet proper.
+An example of inline CSS is:</p>
+<p><code>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;</code></p>
+<p>where the style of the heading is added into the code.</p>
 <h2>Testing Notes</h2>
-<p>None</p>
+<h3>Steps to check</h3>
+<p>Inspect the code to ensure inline CSS has not been used.</p>
 <p><strong>Impact range:</strong> Medium - Low</p>
 <p><strong>Test type:</strong> Manual</p>
 <p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Understanding Success Criterion 1.3.1: Info and Relationships</a></p>

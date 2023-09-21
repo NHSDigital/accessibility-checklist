@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Correct language codes for different languages on the page has been set where applicable - NHS</title>
+    <title>Target size - Components have a minimum target size - NHS</title>
     <link rel="stylesheet" href="/accessibility-checklist/css/nhsuk-frontend.css">
     <link rel="stylesheet" href="/accessibility-checklist/css/checklist.css">
     <script src="/accessibility-checklist/js/scripts.js" defer></script>
@@ -44,31 +44,24 @@
     </svg>
     Back to checklist</a>
 </div>
-<h1>Correct language codes for different languages on the page has been set where applicable</h1>
+<h1>Target size - Components have a minimum target size</h1>
 <h2>Design Notes</h2>
-<p>Design decisions are not relevant.</p>
+<p>The size of the target for pointer inputs is at least 24 by 24 CSS pixels except when:</p>
+<p><strong>Equivalent:</strong> The function can be achieved through a different control on the same page that meets this criterion;</p>
+<p><strong>Inline:</strong> The target is in a sentence or block of text;</p>
+<p><strong>User Agent Control:</strong> The size of the target is determined by the user agent and is not modified by the author;</p>
+<p><strong>Essential:</strong> A particular presentation of the target is essential to the information being conveyed.</p>
+<p>Targets that allow for values to be selected spatially based on position within the target are considered one target for the purpose of the success criterion. Examples include sliders, colour pickers displaying a gradient of colours, or editable areas where you position the cursor.</p>
 <h2>Developer Notes</h2>
-<h3>Setting language codes</h3>
-<p>As well as <a href="/pages/3.1.1-default-human-language-is-set">setting the language of the page</a> it is also important to set the language code on parts of text. If your pages contain multiple languages, use the lang attribute with the relevant language code to identify changes in the language.</p>
-<p>For example <code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p>This will help user agents and assistive technologies to present content according to the presentation and pronunciation rules of that language.</p>
-<h4>More information</h4>
-<ul>
-<li><a href="https://webaim.org/techniques/language/">WebAIM: Document and Content Language</a></li>
-</ul>
+<p>Not relevant.</p>
 <h2>Testing Notes</h2>
-<h3>Correct language codes for different languages on the page has been set where applicable</h3>
-<p>The human language of each passage or phrase in the content can be programmatically determined.</p>
-<p>Exceptions include: proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</p>
-<h4>Steps to check</h4>
+<h3>Steps to check</h3>
 <ul>
-<li>Identify any content written in a different language and use Developer Tools to inspect and confirm content has been marked up appropriately</li>
+<li>Using the HTML console, select the item you wish to measure.</li>
+<li>Ensure that the component has an area at least 24 by 24 CSS pixels.</li>
 </ul>
-<p>For example, where the main site language is English and a fragment is written in French the code should look something like this using a code inspector:</p>
-<p><code>&lt;p lang=&quot;fr&quot;&gt;Ceci est écrit en français&lt;/p&gt;</code></p>
-<p><strong>Impact range:</strong> Low</p>
-<p><strong>Test type:</strong> Manual</p>
-<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Understanding Success Criterion 3.1.2 Language of Parts</a></p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">Understanding Success Criterion 2.5.8 Target Size (Minimum) (WCAG 2.2)</a></p>
+<p><strong>See also:</strong> <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html">Understanding SC 2.5.5: Target Size (Enhanced)</a></p>
 
 <script>
   if (document.referrer) {
