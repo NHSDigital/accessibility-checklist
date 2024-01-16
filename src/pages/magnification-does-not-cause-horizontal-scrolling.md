@@ -30,10 +30,10 @@ timeToTest:
 topic:
   - Layout
 understandingScURL:
-  - https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
+  - https://www.w3.org/WAI/WCAG22/Understanding/reflow
 userImpact:
 order:
-  - 58
+  - 64
 ---
 
 # {{ title }}
