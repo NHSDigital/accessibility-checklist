@@ -1,11 +1,7 @@
-<tr class="nhsuk-table__row">
+<tr>
   <td class="nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Success criteria </span>
-    {%- if pages.data.understandingScURL -%}
-      <a href="{{ pages.data.understandingScURL }}">{{ pages.data.successCriteria }}</a>
-    {%- else %}
-      {{ pages.data.successCriteria }}
-    {%- endif %}
+    {{ pages.data.successCriteria }}
   </td>
   <td class="nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Level </span>{{ pages.data.conformanceLevel }}
@@ -17,21 +13,45 @@
     {%- endif %}
   </td>
   <td class="nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Interaction </span>
+    <span class="nhsuk-table-responsive__heading">What this affects </span>
     {%- if pages.data.interaction -%}
-      {{ pages.data.interaction | join(",  ") | safe  }}
+      {%- if pages.data.interaction.length > 1 -%}
+        <ul class="nhsuk-list--intablecell">
+        {% for action in pages.data.interaction %}
+          <li class="margin-bottom-0">{{ action }}</li>
+        {% endfor %}
+        </ul>
+      {%- else %}
+        {{ pages.data.interaction }}
+      {%- endif %}
     {%- endif %}
   </td>
   <td class="nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Severity </span>
     {%- if pages.data.severity -%}
-      {{ pages.data.severity | join(",  ") | safe }}
+      {%- if pages.data.severity.length > 1 -%}
+        <ul class="nhsuk-list--intablecell">
+        {% for level in pages.data.severity %}
+          <li class="margin-bottom-0">{{ level }}</li>
+        {% endfor %}
+        </ul>
+      {%- else %}
+        {{ pages.data.severity }}
+      {%- endif %}
     {%- endif %}
   </td>
   <td class="nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Responsibility </span>
+    <span class="nhsuk-table-responsive__heading">Who is responsible </span>
     {%- if pages.data.responsibility -%}
-      {{ pages.data.responsibility | join(",<br> ") | safe }}
+      {%- if pages.data.responsibility.length > 1 -%}
+        <ul class="nhsuk-list--intablecell">
+        {% for who in pages.data.responsibility %}
+          <li class="margin-bottom-0">{{ who }}</li>
+        {% endfor %}
+        </ul>
+      {%- else %}
+        {{ pages.data.responsibility }}
+      {%- endif %}
     {%- endif %}
   </td>
   <td class="nhsuk-table__cell">
@@ -40,13 +60,29 @@
   <td class="nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Time to test </span>
     {%- if pages.data.timeToTest -%}
-      {{ pages.data.timeToTest | join(",<br> ") | safe }}
+      {%- if pages.data.timeToTest.length > 1 -%}
+        <ul class="nhsuk-list--intablecell">
+        {% for time in pages.data.timeToTest %}
+          <li class="margin-bottom-0">{{ time }}</li>
+        {% endfor %}
+        </ul>
+      {%- else %}
+        {{ pages.data.timeToTest }}
+      {%- endif %}
     {%- endif %}
   </td>
   <td class="nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Test procedure </span>
     {%- if pages.data.testProcedure -%}
-      {{ pages.data.testProcedure | join(",<br> ") | safe }}
+      {%- if pages.data.testProcedure.length > 1 -%}
+        <ul class="nhsuk-list--intablecell">
+        {% for test in pages.data.testProcedure %}
+          <li class="margin-bottom-0">{{ test }}</li>
+        {% endfor %}
+        </ul>
+      {%- else %}
+        {{ pages.data.testProcedure }}
+      {%- endif %}
     {%- endif %}
   </td>
 </tr>
