@@ -9,80 +9,85 @@
   }
 }
 
-.nhsuk-table-responsive__checklist { /* stylelint-disable-line selector-class-pattern */
+.nhsuk-table__checklist { /* stylelint-disable-line selector-class-pattern */
   padding-right: 16px;
-  thead {
-    white-space: inherit;
-    th {
-      border-top: 2px solid #d8dde0;
-      button {
-        background-color: transparent;
-        border-width: 0;
-        -webkit-box-shadow: 0 0 0 0;
-        -moz-box-shadow: 0 0 0 0;
-        box-shadow: 0 0 0 0;
-        color: #005ea5;
-        cursor: pointer;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-        padding: 0 10px 0 0;
-        position: relative;
-        text-align: inherit;
-        margin: 0;
-        &:focus {
-          background-color: #fd0;
-          color: #0b0c0c;
-          box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-          outline: none;
-        }
-        span {
-          &::before {
-            content: " \25bc";
-            position: absolute;
-            right: -1px;
-            top: 9px;
-            font-size: 0.5em;
-          }
-          &::after {
-            content: " \25b2";
-            font-size: 0.5em;
-            position: absolute;
-            right: -1px;
-            top: 1px;
-          }
-        }
-      }
-      &:first-child {
-        button {
-          right: auto;
-        }
-      }
-    }
-  }
+}
 
-  [aria-sort="ascending"] button span::before,
-  [aria-sort="descending"] button span::before {
-    content: none;
-  }
+.nhsuk-table__checklist thead { /* stylelint-disable-line selector-class-pattern */
+  white-space: inherit;
+}
 
-  [aria-sort="ascending"] button span::after {
-    content: " \25b2";
-    content: "▲";
-    font-size: 0.8em;
-    position: absolute;
-    right: -5px;
-    top: 2px;
-  }
+.nhsuk-table__checklist thead th { /* stylelint-disable-line selector-class-pattern */
+  border-top: 2px solid #d8dde0;
+}
 
-  [aria-sort="descending"] button span::after {
-    content: " \25bc";
-    content: "▼";
-    font-size: 0.8em;
-    position: absolute;
-    right: -5px;
-    top: 2px;
-  }
+.nhsuk-table__checklist thead th button { /* stylelint-disable-line selector-class-pattern */
+  background-color: transparent;
+  border-width: 0;
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  color: #005ea5;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0 10px 0 0;
+  position: relative;
+  text-align: inherit;
+  margin: 0;
+}
+
+.nhsuk-table__checklist thead th:first-child button { /* stylelint-disable-line selector-class-pattern */
+  right: auto;
+}
+
+.nhsuk-table__checklist thead th button:focus { /* stylelint-disable-line selector-class-pattern */
+  background-color: #fd0;
+  color: #0b0c0c;
+  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+  outline: none;
+}
+
+.nhsuk-table__checklist thead th button span::before { /* stylelint-disable-line selector-class-pattern */
+  content: " \25bc";
+  position: absolute;
+  right: -1px;
+  top: 9px;
+  font-size: 0.5em;
+}
+
+.nhsuk-table__checklist thead th button span::after { /* stylelint-disable-line selector-class-pattern */
+  content: " \25b2";
+  font-size: 0.5em;
+  position: absolute;
+  right: -1px;
+  top: 1px;
+}
+
+/* stylelint-disable selector-class-pattern */
+.nhsuk-table__checklist thead th[aria-sort="ascending"] button span::before,
+.nhsuk-table__checklist thead th[aria-sort="descending"] button span::before {
+  content: none;
+}
+/* stylelint-enable selector-class-pattern */
+
+.nhsuk-table__checklist thead th[aria-sort="ascending"] button span::after { /* stylelint-disable-line selector-class-pattern, max-line-length */
+  content: " \25b2";
+  content: "▲";
+  font-size: 0.8em;
+  position: absolute;
+  right: -5px;
+  top: 2px;
+}
+
+.nhsuk-table__checklist thead th[aria-sort="descending"] button span::after { /* stylelint-disable-line selector-class-pattern, max-line-length */
+  content: " \25bc";
+  content: "▼";
+  font-size: 0.8em;
+  position: absolute;
+  right: -5px;
+  top: 2px;
 }
 
 /* navigation */
