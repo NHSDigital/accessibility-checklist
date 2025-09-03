@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('sortByOrder', sortByOrder);
 
   return {
+    pathPrefix: process.env.ELEVENTY_ENV === "prod" ? "/accessibility-checklist/" : "/",
     dir: {
       input: "src",
       output: "public",
