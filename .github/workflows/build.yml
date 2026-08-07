@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
+          npm ci --ignore-scripts
           npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.9.3
